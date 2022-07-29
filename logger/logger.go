@@ -115,7 +115,7 @@ func createMessage(color string, bgColor string, mode string, msg string, prefix
 	}
 
 	if writeFile {
-		WriteToFile(logFileName, "["+mode+"] ▶ "+msg)
+		WriteToFile(logFileName, "["+mode+"] "+state+" ▶ "+msg)
 	}
 }
 
